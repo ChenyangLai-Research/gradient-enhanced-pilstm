@@ -1,0 +1,26 @@
+{
+  "slug": "gradient-pilstm",
+  "repository": "gradient-enhanced-pilstm",
+  "title": "Gradient-enhanced physics-informed LSTM for RUL prediction",
+  "doi": "10.1016/j.ress.2025.111485",
+  "venue": "RESS, 2026 issue; online 2025",
+  "visibility": "private",
+  "source_files": [
+    {
+      "original_relative_path": "battery_final/varying_LR_PINN_GE/1st_test_fold/pinn_resp.py",
+      "sha256": "783f5d49aedb4bdecc40415242dcae3d4e5c39384c0e13e1ea78344fc4bc023d",
+      "archived_as": "legacy/01_pinn_resp.py",
+      "notebook_outputs_removed": false
+    },
+    {
+      "original_relative_path": "battery_final/varying_LR_PINN_GE/1st_test_fold/full_data_PINN_training.py",
+      "sha256": "986ec3b3f3567e0c4fa24ae984bbc128f4b348b44286c30ce3dd8dc692d6c6d8",
+      "archived_as": "legacy/02_full_data_PINN_training.py",
+      "notebook_outputs_removed": false
+    }
+  ],
+  "recovery_date": "2026-10-23",
+  "entrypoint": "python run.py",
+  "validation": "synthetic and local-data short runs passed; checkpoint regression passed",
+  "reproduction_status": "not a full reproduction of paper results"
+}
