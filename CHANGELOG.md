@@ -18,3 +18,10 @@ This runner selects one battery-data path, uses a compact model and capped windo
 - Add regression tests and a CPU CI matrix; CI execution status is reported separately from local tests.
 - Clarify runnable versus archival code, data confidentiality, reproducibility limits and release rights in the documentation.
 - Remove constructor-level seed resets so the requested seed controls model initialization. This changes runs that previously ignored the seed.
+
+## Follow-up release hardening — 2026-10-24
+
+- Protocol v3 removes absolute machine paths, supports data-root relocation and binds replay to the repository and maintained source hashes. Recreate v1/v2 checkpoints.
+- Add replay privacy/provenance regressions and dependency advisory checks on all three hosted operating systems.
+- Avoid duplicate push/PR checks and cancel superseded workflow runs.
+- Record explicit release decisions; no rights, dataset license or scientific approval is assumed.
