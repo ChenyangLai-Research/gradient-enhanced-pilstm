@@ -9,3 +9,12 @@ Added an explicit data root, deterministic CPU seeds, dependency declarations, s
 ## Deviations and unverified parts
 
 This runner selects one battery-data path, uses a compact model and capped windows, and has no ensemble, hyperparameter search or complete cross-validation. It does not reproduce all electronic-component case studies or published performance.
+
+## 2026-10-24 release-readiness audit
+
+- Specify Python 3.12, update the pip bootstrap, align default dependency installation with tested pins, and record a macOS transitive snapshot.
+- Validate CLI values, reject empty/nonfinite normalization inputs, protect existing outputs, and record environment metadata.
+- Add version-2 checkpoint protocols with input-file fingerprints. Older checkpoint protocols require retraining.
+- Add regression tests and a CPU CI matrix; CI execution status is reported separately from local tests.
+- Clarify runnable versus archival code, data confidentiality, reproducibility limits and release rights in the documentation.
+- Remove constructor-level seed resets so the requested seed controls model initialization. This changes runs that previously ignored the seed.
