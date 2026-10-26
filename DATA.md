@@ -1,6 +1,6 @@
 # Local data contract
 
-No research data are bundled. Obtain access from the dataset owner; a publication DOI does not grant redistribution rights. `--data-root` is the root of the corresponding original project, not this repository.
+No research data are bundled. Dataset ownership, external access conditions and redistribution terms have not been verified for this code release. This repository does not offer a download or promise access on request. A publication DOI does not grant redistribution rights. Use only data you are independently authorized to access. `--data-root` is the root of the corresponding original project, not this repository.
 
 Under `battery_final/varying_LR_PINN_GE/1st_test_fold/`: `trajectory_cell_B1.mat`, `trajectory_cell_B2.mat`, `trajectory_cell_B3.mat`, each containing the correspondingly named MATLAB cell array. Trajectories have 32 columns. Use columns 0:24 excluding index 13 (23 features), the last column as RUL, and row index as time.
 
